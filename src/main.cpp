@@ -17,35 +17,6 @@
 #include "scanner.hpp"
 #include "vm.hpp"
 
-namespace birch {
-    // Also not sure if I like inlines yet, might remove this but it might be more performant???
-    inline void repl() {
-        while (true) {
-            std::cout << "> ";
-            std::string source;
-            std::getline(std::cin, source);
-            // Do something with that here later on
-        }
-    }
-
-    inline void run_file(const std::string& filepath) {
-        std::ifstream ifs(filepath);
-        // Do something with stuff here later on
-    }
-
-    inline int main(int argc, char* argv[]) {
-        if (argc == 1) {
-            repl();
-        } else if (argc == 2) {
-            run_file(argv[1]);
-        } else {
-            fprintf(stderr, "Usage: birch [path]\n");
-        }
-
-        return 0;
-    }
-} // namespace birch
-
 int main(int argc, char* argv[]) {
     return 0;
 }
